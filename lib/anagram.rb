@@ -7,10 +7,11 @@ class Anagram
     @word
   end
 
-  def match(anagrams)  #array ["something", "something else", "even more", "Hi there"]
-    if true           # @word or self.word check if self[0][0] == @word[0], then check if self[0][1] == @word[1], and so on until end of @word.length
-      []              # next is self[1][0] == @word[0], then check self[1][1] == @word[1], and so on...
-    end               # repeat for evey element in anagrams
+  def match(anagrams)
+    anagrams.each do |letters|
+      @word.uniq.sort == letters.uniq.sort                           # do they have the same letters anagrams[i] and @word
+      []
+    end
   end
 
 end
