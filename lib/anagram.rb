@@ -8,7 +8,7 @@ class Anagram
   end
 
   def match(anagrams)
-    if true           # word
+    if true           # @word or self.word check if self[0][0] == @word
       []
     end
   end
