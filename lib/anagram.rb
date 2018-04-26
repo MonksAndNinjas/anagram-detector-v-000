@@ -8,11 +8,9 @@ class Anagram
   end
 
   def match(anagrams)
-    if 
-      anagrams.select do |letters|
-        @word.split("").sort == letters.split("").sort                  # do they have the same letters anagrams[i] and @word
-      end
-    []
+    anagrams.select do
+      |letters| @word.split("").sort == letters.split("").sort                # do they have the same letters anagrams[i] and @word
+      
   end
 
 end
