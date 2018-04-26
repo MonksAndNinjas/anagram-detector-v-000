@@ -7,4 +7,7 @@ class Anagram
     word
   end
 
+  def match(anagrams)
+  end
+
 end
